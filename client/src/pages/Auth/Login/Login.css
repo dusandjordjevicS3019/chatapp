@@ -1,0 +1,120 @@
+.loginFormContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eff3ff;
+  border-radius: 30px;
+  height: 95%;
+  margin-bottom: 58px;
+  position: relative;
+}
+
+.loginFormContainer__heading {
+  font-size: 40px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.loginForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginForm__input {
+  width: 70%;
+  /* padding: 8px; */
+  border: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  padding: 18px 12px 15px 20px;
+  /* padding-left: 20px; */
+  margin-bottom: 60px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.loginForm__input:focus {
+  border-color: #658fff;
+  outline: none;
+}
+
+.loginForm--invalidInput {
+  border-color: #ff0000;
+}
+
+.errorMsgContainerLogin {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.errorMsgLogin {
+  position: relative;
+  bottom: 60;
+  color: #ff0000;
+  font-size: 12px;
+  visibility: hidden;
+}
+
+.errorMsgLogin--show {
+  visibility: visible;
+}
+
+.loginForm__submitBtn {
+  border: none;
+  border-radius: 35px;
+  background-color: #5781ff;
+  border: 1px solid #5781ff;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  padding: 20px 60px;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.loginForm__submitBtn:hover,
+.loginForm__submitBtn:active {
+  cursor: pointer;
+  background-color: #fff;
+  color: #5781ff;
+}
+
+.loginForm--disabledBtn {
+  border: none;
+  border-radius: 35px;
+  background-color: #ccc;
+  border: 1px solid #a8a8a8;
+  color: #6e6e6e;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  padding: 20px 60px;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.loginForm--disabledBtn:hover {
+  cursor: not-allowed;
+}
+
+.signupBtn__container {
+  position: absolute;
+  bottom: 0;
+  right: 25px;
+}
+
+.signupBtn {
+  font-weight: bold;
+  color: #5781ff;
+  font-size: 18;
+  margin-left: 5px;
+}
+
+.signupBtn:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,103 @@
+.chatInfoContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+
+.participants {
+  flex: 1;
+  margin: 20px 20px 20px 60px;
+  padding-left: 20px;
+  border: 1px solid #658fff;
+  width: 83%;
+  border-radius: 50px;
+}
+
+.participants__title {
+  font-weight: bold;
+  color: #658fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leaveBtn {
+  color: #fff;
+  background-color: #ff0000;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+.leaveBtn:hover {
+  cursor: pointer;
+  background-color: #ce0000;
+}
+
+.participant {
+  margin-left: 10px;
+  color: #fff;
+  background-color: #658fff;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+.messages {
+  flex: 8;
+  padding: 20px 40px 20px 40px;
+  overflow: auto;
+  border-radius: 30px;
+  background-color: #fff;
+  margin: 0 60px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.formMessage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 2;
+}
+
+.formMessage__input {
+  outline: none;
+  border: none;
+  border: 1px solid #658fff;
+  color: #888;
+  padding: 0 20px;
+  height: 50%;
+  width: 70%;
+  border-radius: 50px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.formMessage__input:focus {
+  background-color: #eff3ff;
+}
+
+.formMessage__send {
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #658fff;
+  border: 2px solid #658fff;
+  padding: 12px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.formMessage__send:hover {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.formMessage__icon {
+  position: relative;
+  left: 3px;
+}
