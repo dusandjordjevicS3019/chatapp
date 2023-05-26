@@ -6,8 +6,6 @@ import ChatBox from "./ChatBox";
 const ChatForm = ({ messages, sendMessage }) => {
   const messageInputRef = useRef();
 
-  console.log(messages);
-
   const messageFormHandler = (event) => {
     event.preventDefault();
 
