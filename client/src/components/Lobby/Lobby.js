@@ -6,12 +6,20 @@ import TextField from "@mui/material/TextField";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
+import { authActions } from "../../store/authSlice";
+import { useDispatch, useSelector } from "react-redux";
+import LogoutButton from "../../components/LogoutButton/LogoutButton";
+import "./Lobby.css";
 
 import sendData from "../../util/sendData";
 
 const Lobby = ({ onJoinRoom }) => {
+  const userinfo = useSelector((state) => state.auth.userInfo);
+
   const [user, setUser] = useState();
   const [room, setRoom] = useState();
+
+  const dispatch = useDispatch();
 
   const submitHandler = (event) => {
     event.preventDefault();
@@ -27,8 +35,17 @@ const Lobby = ({ onJoinRoom }) => {
     setRoom(e.target.value);
   };
 
+  const logoutHandler = () => {
+    dispatch(authActions.logout());
+  };
+
   return (
     <Container component='main' maxWidth='xs'>
+      <div className='logoutContainer'>
+        <span>Welcome:</span>
+        <span>{userinfo.email}</span>
+        <LogoutButton text='Logout' onLogout={logoutHandler} />
+      </div>
       <CssBaseline />
       <Box
         sx={{

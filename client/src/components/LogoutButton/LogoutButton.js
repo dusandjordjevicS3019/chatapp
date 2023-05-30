@@ -3,7 +3,12 @@ import { Button } from "@mui/material";
 
 const LogoutButton = ({ onLogout, text }) => {
   return (
-    <Button variant='contained' color='error' onClick={onLogout}>
+    <Button
+      sx={{ borderRadius: 10 }}
+      variant='contained'
+      color='error'
+      onClick={onLogout}
+    >
       {text}
     </Button>
   );
