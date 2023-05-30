@@ -27,7 +27,6 @@ namespace ChatApp.Hubs
 
         public async Task JoinRoom(UserConnection userConnection)
         {
-            // ovaj userConnextion gore je dictionary, ali u mom slucaju moze da bude samo string - roomId
             await Groups.AddToGroupAsync(Context.ConnectionId, userConnection.Room);
 
             _connections[Context.ConnectionId] = userConnection;

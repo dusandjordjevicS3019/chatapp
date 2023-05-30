@@ -2,15 +2,10 @@ import React, { useState } from "react";
 import "./Chat.css";
 import { HubConnectionBuilder, LogLevel } from "@microsoft/signalr";
 
-import { useDispatch, useSelector } from "react-redux";
-import { authActions } from "../../store/authSlice";
 import Lobby from "../../components/Lobby/Lobby";
 import ChatComponent from "../../components/ChatComponent/ChatComponent";
-import LogoutButton from "../../components/LogoutButton/LogoutButton";
 
 const Chat = () => {
-  const dispatch = useDispatch();
-
   const [connection, setConnection] = useState();
   const [messages, setMessages] = useState([]);
   const [users, setUsers] = useState([]);
