@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Eh9ZBpUC3YlrAZF+QKk4M1eI5A30TgPg2+iLjDq48rGx/J2AuVQ3az/I96Umf0HpaE/kxuVspTK8m+9QJp6Jug==",
+  "dgSpecHash": "kSdcQX3WI9eDhANblgy2CRued8q5GLxqL4fcOKySB1YI3p5ghkDV0XjkIzfnAxnDGmRKD78jesbPC5kh5xpXTQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kenqz\\Desktop\\RVAS2\\server\\ChatApp\\ChatApp.csproj",
+  "projectFilePath": "C:\\Users\\Kenqz\\Desktop\\ChatApp\\server\\ChatApp\\ChatApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

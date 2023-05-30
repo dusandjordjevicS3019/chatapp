@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kenqz\\Desktop\\RVAS2\\server\\ChatApp\\ChatApp.csproj",
+      "projectUniqueName": "C:\\Users\\Kenqz\\Desktop\\ChatApp\\server\\ChatApp\\ChatApp.csproj",
       "projectName": "ChatApp",
-      "projectPath": "C:\\Users\\Kenqz\\Desktop\\RVAS2\\server\\ChatApp\\ChatApp.csproj",
+      "projectPath": "C:\\Users\\Kenqz\\Desktop\\ChatApp\\server\\ChatApp\\ChatApp.csproj",
       "packagesPath": "C:\\Users\\Kenqz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kenqz\\Desktop\\RVAS2\\server\\ChatApp\\obj\\",
+      "outputPath": "C:\\Users\\Kenqz\\Desktop\\ChatApp\\server\\ChatApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

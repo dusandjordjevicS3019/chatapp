@@ -2,3 +2,7 @@
   display: flex;
   height: 100%;
 }
+.loggedUser {
+  padding: 20px;
+  margin: 2px;
+}
