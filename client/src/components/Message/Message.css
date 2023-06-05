@@ -11,6 +11,10 @@
   border-radius: 20px;
 }
 
+.message-user {
+  margin-left: 5px;
+}
+
 .time {
   font-weight: 400;
   margin-left: 20px;
