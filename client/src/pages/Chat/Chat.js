@@ -81,10 +81,6 @@ const Chat = () => {
     return hours + ":" + minutes;
   };
 
-  // const logoutHandler = () => {
-  //   dispatch(authActions.logout());
-  // };
-
   return (
     <div className='chatContainer'>
       {!connection ? (

@@ -6,7 +6,7 @@ const Message = ({ message, time, user }) => {
     <div className='messageContainer'>
       <p className='message'>
         <span>{user}</span>
-        <span>{message}</span>
+        <span className='message-user'>{message}</span>
         <span className='time'>
           {time}
           <BsClock className='clock' color='#fff' size={14} />

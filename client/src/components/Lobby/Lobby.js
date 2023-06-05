@@ -41,11 +41,7 @@ const Lobby = ({ onJoinRoom }) => {
 
   return (
     <Container component='main' maxWidth='xs'>
-      <div className='logoutContainer'>
-        <span>Welcome:</span>
-        <span>{userinfo.email}</span>
-        <LogoutButton text='Logout' onLogout={logoutHandler} />
-      </div>
+      <LogoutButton text='Logout' onLogout={logoutHandler} />
       <CssBaseline />
       <Box
         sx={{
@@ -57,7 +53,7 @@ const Lobby = ({ onJoinRoom }) => {
       >
         <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}></Avatar>
         <Typography component='h1' variant='h5'>
-          Join chat room
+          {userinfo.email}
         </Typography>
         <Box
           component='form'
@@ -70,7 +66,7 @@ const Lobby = ({ onJoinRoom }) => {
             required
             fullWidth
             id='email'
-            label='Username'
+            label='Chose your chat username'
             name='username'
             autoComplete='email'
             autoFocus
